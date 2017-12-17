@@ -1,0 +1,41 @@
+<!doctype html>
+<!-- Nathan Evans -->
+<html>
+	<head>
+		<title>HTML/Javascript Games</title>
+		<link type="text/css" rel="stylesheet" href ="stylesheet.css">
+		<meta charset="UTF-8">
+        <meta name="description" content="HTML/Javascript Games">
+        <meta name="keywords" content="Tic Tac Toe, War, Rock-Paper-Scissors">
+        <meta name="author" content="Nathan Evans">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	    
+	<h1>Welcome to HTML/Javascript Games!</h1>
+	
+	<p class="LandingPage">This is the landing page for HTML/Javascript Games!</p>
+	
+	<div class="MainNavBar">
+	    <a href="index.html">Home</a>
+	    <a href="games.html">Games</a>
+	    <a href="AboutUs.html">About Us</a>
+	</div>
+	
+	<p class="mainInfo">Tic Tac Toe is a game commonly played at restaurants, home, or in class that is usually played by young kids.<br></p>
+	<p class="mainInfo">The game starts by drawing a 3 by 3 grid</p>
+    <p class = "gridWrapper"><img id="imgGrid" src="Images/3x3.png" alt="Whoops! Something went wrong!"></p>
+	<p class="mainInfo">Each player takes one turn and puts either an "X" for player one, or "O" for player two.</p>
+	<p class="mainInfo">The game is over when three X's or O's are in a row, or when the board is full.</p>
+    <p class = "gridWrapper"><img id="imgGrid2" src="Images/FinishedGame.png" alt="Whoops! Something went wrong!"></p>
+    <p class="mainInfo">This person has lost already as X has lured him into a trap</p>
+    <p class="mainInfo">Go play Tic Tac Toe by clicking on the Games tab!</p>
+        
+    <form action="timesPlayed.php" method="post">
+        How many times have you played Tic Tac Toe?
+        <input type="text" name="timesPlayed">
+        <input id="timesPlayedSubmit" type="submit">
+        <p id="timesPlayedPara"></p>
+    </form>
+	</body>
+</html>

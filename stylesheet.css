@@ -1,0 +1,242 @@
+/*Stylesheet for Retro Games!*/
+
+/*Navigational Bar*/
+div.MainNavBar {
+    font-family: 'Abel', sans-serif;
+    background-color: #4d6c9e;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center
+}
+		
+div.MainNavBar a {
+    display: inline-block;
+    color: #9daec9;
+    text-align: center;
+    padding: 1.25%;
+    text-decoration: none;
+}
+		
+div.MainNavBar a:hover {
+    color: #bcd1f2;
+    background-color: #374c6d;
+}
+/*Box for List of Games*/
+div.GamesList {
+    font-family: 'Abel', sans-serif;
+    padding: 0.5%;
+    background-color: #5473a8;
+    text-align: center;
+    font-size: 25px;
+}
+		
+div.GamesList a {
+    text-decoration: none;
+    color: #9daec9;
+}
+		
+div.GamesList a:hover {
+    color: #bcd1f2;
+}
+/*html*/
+html {
+    height: 100%;
+    width: 100%;
+}
+/*Body for all pages*/
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #95b3e5;
+}
+/*Welcome to Prehistoric Games!*/
+h1 {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    color: black;
+}
+/*Which game would you like to play?*/
+p.Games1 {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+p.LandingPage {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+/*List of Games*/
+ul.GamesList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+li.TicTacToeLink {
+    display: inline-block;
+    margin: 5%;
+    padding: 1%;
+}
+li.RockPaperScissorsLink {
+    display: inline-block;
+    margin: 5%;
+    padding: 1%;
+}
+li.WarLink {
+    display: inline-block;
+    margin: 5%;
+    padding: 1%;
+}
+/*Images for Games List*/
+img.TicTacToeImg {
+    padding: 1%;
+    margin: 1%;
+    display:inline-block;
+
+}
+img.RockPaperScissorsImg {
+    padding: 1%;
+    margin: 1%;
+    display:inline-block;
+}
+img.WarImg {
+    padding: 1%;
+    margin: 1%;
+    display:inline-block;
+}
+/*Grid for Tic-Tac-Toe*/
+a.buttonTTT {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1000%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    width: 160px;
+    height: 160px;
+    color: #80a7e5;
+    background-color: #374c6d;
+}
+#topLeft {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#topMid {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#topRight {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+#midLeft {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#midMid {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#midRight {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#botLeft {
+    grid-column: 1 / 2;
+    grid-row: 3 / 3;
+}
+#botMid {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+#botRight {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+/*Wrapper for Grid*/
+div.TicTacToe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+#displayParagraph {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100px;
+    width: 1000px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #374c6d;
+    background-color: #80a7e5;
+}
+p.mainInfo {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	color: #374c6d;
+    width: 100%;
+}
+
+p.gridWrapper {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+#imgGrid {
+    height: 100%;
+    width: 10%;
+}
+#imgGrid2 {
+    height: 100%;
+    width: 10%;
+}
+div.aboutUs {
+    text-indent: 25px;
+    text-align: left;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	color: #9daec9;
+    background-color: #374c6d;
+    top: 2.5%;
+    padding: 2%;
+    margin: 1%;
+
+}
+#aboutUsDivWrapper {
+    vertical-align: middle;
+    position: relative;
+    width: 50%;
+    height: 60%;
+    left: 50%;
+    margin: 1%;
+    transform: translateX(-50%);
+    background-color: #80a7e5;
+}
+#nathanEvans {
+    z-index: 1;
+    position: relative;
+    float: right;
+    width: 20%;
+}
+#timesPlayedSubmit.onclick {
+    $("#timesPlayedPara").text("<?php echo $_POST["timesPlayed"]; ?>? That's not that bad, go play some more!");
+}
+#timesPlayedPara {
+    
+}
